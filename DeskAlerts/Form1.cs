@@ -28,14 +28,21 @@ namespace DeskAlerts
                                       basicProperties: null,
                                       body: body);
                 textBox1.AppendText(" [x] Sent" + message);
-                
+
             }
-            
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void GetMessages(object sender, EventArgs e)
         {
 
+            var factory = new ConnectionFactory() { HostName = "localhost" };
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+
+            }
         }
     }
 }

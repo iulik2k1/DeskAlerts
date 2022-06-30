@@ -23,39 +23,33 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
+//app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
 var scopeRequiredByApi = app.Configuration["AzureAd:Scopes"] ?? "";
-var summaries = new[]
-{
-    "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-};
 
-app.MapGet("/getMessageQueue", (HttpContext httpContext) =>
+app.MapGet("/getMessageQueue/{id}", (HttpContext httpContext) =>
 {
     httpContext.VerifyUserHasAnyAcceptedScope(scopeRequiredByApi);
-
-
 })
 .WithName("getMessageQueue");
 //.RequireAuthorization();
+
 
 app.MapPost("/pushMessageQueue", (HttpContext httpContext) =>
 {
 
 
 
-
 }).WithName("/pushMessageQueue");
 
 
+app.MapPost("/messageAcknowledge", (HttpContext httpContext) =>
+{
+
+
+}).WithName("/messageAcknowledge");
+
 
 app.Run();
-
-internal record getMessageQueue(DateTime Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

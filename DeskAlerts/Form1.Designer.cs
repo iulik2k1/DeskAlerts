@@ -30,43 +30,95 @@
         {
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnGetMessages = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(656, 134);
+            this.button1.Location = new System.Drawing.Point(624, 26);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 23);
+            this.button1.Size = new System.Drawing.Size(145, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Send message";
+            this.button1.Text = "Send message to queue";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 163);
+            this.textBox1.Location = new System.Drawing.Point(12, 135);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(776, 275);
+            this.textBox1.Size = new System.Drawing.Size(776, 289);
             this.textBox1.TabIndex = 1;
             // 
-            // button2
+            // btnGetMessages
             // 
-            this.button2.Location = new System.Drawing.Point(452, 21);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(158, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Get messages...";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnGetMessages.Location = new System.Drawing.Point(12, 95);
+            this.btnGetMessages.Name = "btnGetMessages";
+            this.btnGetMessages.Size = new System.Drawing.Size(158, 23);
+            this.btnGetMessages.TabIndex = 2;
+            this.btnGetMessages.Text = "Get messages...";
+            this.btnGetMessages.UseVisualStyleBackColor = true;
+            this.btnGetMessages.Click += new System.EventHandler(this.GetMessages);
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(74, 25);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(234, 23);
+            this.textBox2.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(25, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "User: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(323, 30);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 15);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "message:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(396, 26);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(222, 23);
+            this.textBox3.TabIndex = 6;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(197, 95);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(154, 23);
+            this.button3.TabIndex = 7;
+            this.button3.Text = "Get Channels";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.btnGetMessages);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -80,6 +132,11 @@
 
         private Button button1;
         private TextBox textBox1;
-        private Button button2;
+        private Button btnGetMessages;
+        private TextBox textBox2;
+        private Label label1;
+        private Label label2;
+        private TextBox textBox3;
+        private Button button3;
     }
 }
