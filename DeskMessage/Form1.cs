@@ -17,6 +17,7 @@ namespace DeskMessage
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
             button1.Enabled = false;
+            label1.Text+= System.Security.Principal.WindowsIdentity.GetCurrent().Name; 
         }
 
         private void checkBox1_Validated(object sender, EventArgs e)

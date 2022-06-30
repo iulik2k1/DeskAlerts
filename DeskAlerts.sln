@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskAlerts", "DeskAlerts\DeskAlerts.csproj", "{C4275123-F441-4C92-B1B9-FA338F7524C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskDashboard", "DeskAlerts\DeskDashboard.csproj", "{C4275123-F441-4C92-B1B9-FA338F7524C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskAPI", "DeskAPI\DeskAPI.csproj", "{AB59A861-22B5-4C97-BAA1-041E2CDFB13F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeskAPI", "DeskAPI\DeskAPI.csproj", "{AB59A861-22B5-4C97-BAA1-041E2CDFB13F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskMessage", "DeskMessage\DeskMessage.csproj", "{C6276140-BF5D-4016-A4AD-762A396EFAF9}"
 EndProject
