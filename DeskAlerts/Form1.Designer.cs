@@ -38,7 +38,9 @@
             this.button3 = new System.Windows.Forms.Button();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
+            this.button2 = new System.Windows.Forms.Button();
             this.statusStrip1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // button1
             // 
@@ -67,14 +69,13 @@
             this.btnGetMessages.Text = "Get messages...";
             this.btnGetMessages.UseVisualStyleBackColor = true;
             this.btnGetMessages.Click += new System.EventHandler(this.GetMessages);
-            //
+            // 
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(74, 25);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(234, 23);
             this.txtUser.TabIndex = 3;
-
             // 
             // label1
             // 
@@ -101,7 +102,6 @@
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.Size = new System.Drawing.Size(222, 23);
             this.txtMessage.TabIndex = 6;
-
             // 
             // button3
             // 
@@ -128,11 +128,22 @@
             this.lblStatus.Size = new System.Drawing.Size(23, 17);
             this.lblStatus.Text = "OK";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(472, 95);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(99, 23);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "toast";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.txtMessage);
@@ -163,6 +174,6 @@
         private Button button3;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel lblStatus;
-
+        private Button button2;
     }
 }

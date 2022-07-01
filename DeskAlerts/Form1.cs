@@ -27,6 +27,7 @@ namespace DeskAlerts
                                       routingKey: txtUser.Text,
                                       basicProperties: null,
                                       body: body);
+
                 textBox1.AppendText("Sent to user: " + txtUser.Text + "   message: " + message + Environment.NewLine);
             }
 
@@ -42,6 +43,12 @@ namespace DeskAlerts
             {
 
             }
+        }
+
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
