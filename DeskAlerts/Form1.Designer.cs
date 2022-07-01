@@ -31,7 +31,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnGetMessages = new System.Windows.Forms.Button();
-<<<<<<< HEAD
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -40,14 +39,6 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.lblStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
-=======
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
->>>>>>> 04be98e4c2b51bc4bcc4c76f17990cd1fcf4678b
-            this.SuspendLayout();
             // 
             // button1
             // 
@@ -76,22 +67,14 @@
             this.btnGetMessages.Text = "Get messages...";
             this.btnGetMessages.UseVisualStyleBackColor = true;
             this.btnGetMessages.Click += new System.EventHandler(this.GetMessages);
-            // 
-<<<<<<< HEAD
+            //
             // txtUser
             // 
             this.txtUser.Location = new System.Drawing.Point(74, 25);
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(234, 23);
             this.txtUser.TabIndex = 3;
-=======
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(74, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(234, 23);
-            this.textBox2.TabIndex = 3;
->>>>>>> 04be98e4c2b51bc4bcc4c76f17990cd1fcf4678b
+
             // 
             // label1
             // 
@@ -111,7 +94,6 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "message:";
             // 
-<<<<<<< HEAD
             // txtMessage
             // 
             this.txtMessage.Location = new System.Drawing.Point(396, 26);
@@ -119,15 +101,7 @@
             this.txtMessage.Name = "txtMessage";
             this.txtMessage.Size = new System.Drawing.Size(222, 23);
             this.txtMessage.TabIndex = 6;
-=======
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(396, 26);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 23);
-            this.textBox3.TabIndex = 6;
->>>>>>> 04be98e4c2b51bc4bcc4c76f17990cd1fcf4678b
+
             // 
             // button3
             // 
@@ -137,7 +111,6 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Get Channels";
             this.button3.UseVisualStyleBackColor = true;
-<<<<<<< HEAD
             // 
             // statusStrip1
             // 
@@ -154,28 +127,18 @@
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(23, 17);
             this.lblStatus.Text = "OK";
-=======
->>>>>>> 04be98e4c2b51bc4bcc4c76f17990cd1fcf4678b
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-<<<<<<< HEAD
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUser);
-=======
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
->>>>>>> 04be98e4c2b51bc4bcc4c76f17990cd1fcf4678b
             this.Controls.Add(this.btnGetMessages);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -193,7 +156,6 @@
         private Button button1;
         private TextBox textBox1;
         private Button btnGetMessages;
-<<<<<<< HEAD
         private TextBox txtUser;
         private Label label1;
         private Label label2;
@@ -201,12 +163,6 @@
         private Button button3;
         private StatusStrip statusStrip1;
         private ToolStripStatusLabel lblStatus;
-=======
-        private TextBox textBox2;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox3;
-        private Button button3;
->>>>>>> 04be98e4c2b51bc4bcc4c76f17990cd1fcf4678b
+
     }
 }

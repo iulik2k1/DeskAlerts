@@ -16,18 +16,18 @@ namespace DeskAlerts
             using (var connection = factory.CreateConnection())
             using (var channel = connection.CreateModel())
             {
-                channel.QueueDeclare(queue: "hello",
+                channel.QueueDeclare(queue: "acknowledge",
                                      durable: false,
                                      exclusive: false,
                                      autoDelete: false,
                                      arguments: null);
-                string message = "Hello World!";
+                string message = txtMessage.Text;
                 var body = Encoding.UTF8.GetBytes(message);
                 channel.BasicPublish(exchange: "",
-                                      routingKey: "hello",
+                                      routingKey: txtUser.Text,
                                       basicProperties: null,
                                       body: body);
-                textBox1.AppendText(" [x] Sent" + message);
+                textBox1.AppendText("Sent to user: " + txtUser.Text + "   message: " + message + Environment.NewLine);
             }
 
         }
