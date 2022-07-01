@@ -28,7 +28,6 @@ namespace DeskAlerts
                                       basicProperties: null,
                                       body: body);
                 textBox1.AppendText(" [x] Sent" + message);
-               
             }
 
         }
