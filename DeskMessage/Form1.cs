@@ -38,7 +38,7 @@ namespace DeskMessage
 
             notifyIcon1.Icon = new Icon("favicon.ico");
 
-            notifyIcon1.Text = "ete";
+            notifyIcon1.Text = "Your password will expire soon!";
             notifyIcon1.Visible = true;
             notifyIcon1.BalloonTipTitle = "Important!";
             notifyIcon1.BalloonTipText = "You password will expire soon!\n Click for confirmation!";
@@ -47,16 +47,16 @@ namespace DeskMessage
             //notifyIcon1.BalloonTipClicked
 
         }
-
+ 
         private void notifyIcon1_BalloonTipClicked(object sender, EventArgs e)
         {
             if (confirmation == false)
             {
                 notifyIcon1.Icon = new Icon("favicon.ico");
-                notifyIcon1.Text = "ete";
+                notifyIcon1.Text = "Your password will expire soon!";
                 notifyIcon1.Visible = true;
                 notifyIcon1.BalloonTipTitle = "Important!";
-                notifyIcon1.BalloonTipText = "Thank for confirmation!";
+                notifyIcon1.BalloonTipText = "Thank you for confirmation!";
                 notifyIcon1.ShowBalloonTip(10000);
                 confirmation = true;
             }
