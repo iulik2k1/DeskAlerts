@@ -29,27 +29,31 @@ app.UseAuthorization();
 
 var scopeRequiredByApi = app.Configuration["AzureAd:Scopes"] ?? "";
 
-app.MapGet("/getMessageQueue/{id}", (HttpContext httpContext) =>
+
+Message msg = new Message { user = @"IULIK-PC\iulik", message = "Expira parola in 2 zile", expire = DateTime.Now.AddDays(2) };
+
+app.MapGet("/getMessageQueue", () =>
 {
-    httpContext.VerifyUserHasAnyAcceptedScope(scopeRequiredByApi);
-})
-.WithName("getMessageQueue");
-//.RequireAuthorization();
-
-
-app.MapPost("/pushMessageQueue", (HttpContext httpContext) =>
-{
+    return Results.Ok(msg);
+});
 
 
 
-}).WithName("/pushMessageQueue");
+app.MapPost("/pushMessageQueue", async (string user, string message, DateTime dt, HttpResponse response) => {
+    Message msgqueue = new Message { user = user, message = message, expire = dt };
+    Console.WriteLine(msgqueue);
+    return Results.Ok();
+});
 
-
-app.MapPost("/messageAcknowledge", (HttpContext httpContext) =>
-{
-
-
-}).WithName("/messageAcknowledge");
 
 
 app.Run();
+
+
+public class Message
+{
+    public string user { get; set; }
+    public string message { get; set; }
+    public DateTime expire { get; set; }
+
+}
